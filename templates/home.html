@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Flask Web App</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+
+<h1>Infection Classification</h1>
+<p> Please upload image below to classify infected or not</p>
+
+<form action="/result" method="POST" enctype="multipart/form-data">
+
+    <input type="file" name="file" accept="image/*">
+    <br>
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
