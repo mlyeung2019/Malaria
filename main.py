@@ -1,9 +1,9 @@
 #https://github.com/keras-team/keras/issues/13353 (replace keras by tensorflow.keras)
 from flask import Flask, render_template, request
 import numpy as np
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 #from tensorflow.keras.applications import vgg16
-from tensorflow.keras.preprocessing import image
+from keras.preprocessing import image
 #from tensorflow.keras.preprocessing.image import img_to_array
 #import pickle
 #import keras.backend.tensorflow_backend as tb
